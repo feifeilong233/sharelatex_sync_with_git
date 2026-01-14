@@ -14,7 +14,7 @@ HOST="$INPUT_SHARELATEX_HOST"
 
 echo "Dumping zip file at $ZIP_OUTPUT_PATH"
 
-curl "https://$HOST/project/$PROJECT_ID/download/zip" \
+curl "http://$HOST/project/$PROJECT_ID/download/zip" \
   -H "authority: $HOST" \
   -H 'pragma: no-cache' \
   -H 'cache-control: no-cache' \
